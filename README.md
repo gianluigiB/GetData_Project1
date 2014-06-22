@@ -42,10 +42,11 @@ The last two steps are done through the appendTimeFrequency function.
 If interested, you can remove the comment from the last command of block 4 to generate a file with the tidy dataset obtained so far.
 It contains 10299 observations on 88 variables (86 of which numerics) and it is ~ 10MB large.
 
-In block 5 I load the df_tidy to a data table set the subjectID and the activity as keys and the calculate the mean on all numerical columns
-(the internal .SD object) by subjectID and activity. Through data.table this is a very quick operation which generates a second indipendent tidy dataset, dt_tidy
+In block 5 I load the df_tidy to a data table set the subjectID and the activity as keys and the calculate the mean on all numerical columns (the internal .SD object) by subjectID and activity. Through data.table this is a very quick operation which generates a second indipendent tidy dataset, dt_tidy.
+
 Finally I export dt_tidy to an external file, without row.names:
 second_tidy_dataset.txt
 it contains 180 obs (30 subjects x 6 activities) on 88 variables (86 of which numerics) and it is ~285KB.
+
 For the name of the variables see the Codebook.
 
