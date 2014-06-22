@@ -38,6 +38,7 @@ More specifically I've removed all (, ), - already in block 2 and split those na
 - replace Gyro with AngularVelocity
 - replace initial t with time
 - replace initial f with frequency
+
 The last two steps are done through the appendTimeFrequency function.
 If interested, you can remove the comment from the last command of block 4 to generate a file with the tidy dataset obtained so far.
 It contains 10299 observations on 88 variables (86 of which numerics) and it is ~ 10MB large.
